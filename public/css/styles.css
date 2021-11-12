@@ -306,44 +306,7 @@ img {
 @media (min-width: 361px){
     
     /* header */    
-  
-    .top-header .logo{
-        width: 33% ;
-    }
 
-    header .form {
-        width: 33%;
-    }
-    header div.top-header p{
-        width: 33%  ;
-        font-size: 1rem;
-        
-    }
-
-
-    header nav{
-    display: flex;
-    justify-content: space-between;   
-    }
-
-    header ul li a{
-        font-size: 1rem;
-    }
-
-
-
-    ul{
-        display:inline;
-    }
-
-    ul li{
-        margin: 5px;
-    }
-
-    .burger-menu{
-
-        display: none;
-    }
 
     
 
@@ -378,12 +341,45 @@ img {
 /***************** Desktop *****************/
 @media (min-width: 769px){
     /* header */
-
-    header ul li a{
-        font-size: 1.2rem;
+      
+    .top-header .logo{
+        width: 33% ;
     }
 
-    
+    header .form {
+        width: 33%;
+    }
+    header div.top-header p{
+        width: 33%  ;
+        font-size: 1rem;
+        
+    }
+
+
+    header nav{
+    display: flex;
+    justify-content: space-between;   
+    }
+
+    header ul li a{
+        font-size: 1.15rem;
+    }
+
+
+
+    ul{
+        display:inline;
+    }
+
+    ul li{
+        margin: 5px;
+    }
+
+    .burger-menu{
+
+        display: none;
+    }
+
 
     /* main */
     .products article{
