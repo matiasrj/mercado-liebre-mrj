@@ -35,7 +35,7 @@ header{
 }
 
 header div.logo{
-    width: 50%;
+    width: 45%;
     padding: 10px 0px;
 }
 
@@ -44,34 +44,19 @@ header div.logo img{
     padding: 10px 10px;
 }
 
-header form{
-    display: flex;
-    font-size: 1.5rem;
-}
 
-
-header .form .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    width: 10%;
-}
 
 div.top-header{
     padding: 5% 0%;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
 }
 
 
-header div.top-header-sub{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 header div.top-header p{
     width: 100%;
@@ -82,12 +67,13 @@ header div.top-header p{
 }
 
 header .form{
-    width: 50%;
+    width: 45%;
     display: flex;
     justify-content: center;
     border-radius: 5px;
     border-color: white;
     background-color: white;
+    align-items: center;
 }
 
 header .form .input{
@@ -107,6 +93,10 @@ header .form .submit{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
 }
 
  header .input, .submit{
@@ -314,12 +304,22 @@ img {
 
 /***************** tablets *****************/
 @media (min-width: 361px){
-
-    /* header */
-
-    .top-header-sub{
-        width: 100%;
+    
+    /* header */    
+  
+    .top-header .logo{
+        width: 33% ;
     }
+
+    header .form {
+        width: 33%;
+    }
+    header div.top-header p{
+        width: 33%  ;
+        font-size: 1rem;
+        
+    }
+
 
     header nav{
     display: flex;
@@ -330,9 +330,7 @@ img {
         font-size: 1rem;
     }
 
-    header div.top-header p{
-        font-size: 1rem;
-    }
+
 
     ul{
         display:inline;
@@ -347,10 +345,6 @@ img {
         display: none;
     }
 
-    
-    div.top-header{
-        flex-direction: row;
-    }
     
 
 
@@ -390,9 +384,6 @@ img {
     }
 
     
-    header div.top-header p{
-        font-size: 1.1em;
-    }
 
     /* main */
     .products article{
