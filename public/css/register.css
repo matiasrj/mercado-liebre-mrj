@@ -1,3 +1,14 @@
+
+:root{
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
+}
+
+
 form{
     /* text-align: center; */
     width: 90%;
@@ -12,9 +23,11 @@ text-align: start;
 input {
     border-radius: 5px;
     font-size: 1.2rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     width: 100%;
     border:none;
+    border-bottom: 1px solid blue;
+    background-color: var(--Gris-claro);
     padding: 2px;
 }
 
@@ -30,13 +43,15 @@ input[type="checkbox"], input[type="radio"]{
 }
 
 
-
-input:invalid{
- 
-    border:2px solid red;
-   
+input:not(:placeholder-shown):invalid{
+    border:2px solid red;  
 }
 
+.tag{
+    color: blue;
+    font-weight: bold;
+    display: block;
+}
 
 @media (min-width: 769px){
 

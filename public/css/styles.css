@@ -44,6 +44,11 @@ header div.logo img{
     padding: 10px 10px;
 }
 
+header form{
+    display: flex;
+    font-size: 1.5rem;
+}
+
 
 header .form .submit{
     background-color: #FFF;
@@ -70,8 +75,10 @@ header div.top-header-sub{
 
 header div.top-header p{
     width: 100%;
+    font-size: 1rem;
     text-align: center;
     margin-top: 10px;
+    margin-left: 2px;
 }
 
 header .form{
@@ -90,7 +97,8 @@ header .form .input{
     color: #666;
     padding: 2px;
     justify-content: center;
-    font-size: .7rem;
+    font-size: 1.2rem;
+    width: 90%;
 }
 
 
@@ -125,6 +133,7 @@ header ul li{
 header ul li a{
     text-decoration: none;
     color: #000;
+    font-size: 1rem;
 }
 
 
@@ -263,16 +272,28 @@ footer{
     background-color: white;
 }
 
-footer article i{
+
+.footer-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section article{
+    width: 100%;
+    text-align: center;
+}
+
+.footer-section article i{
     display: block;
     font-size: 2rem;
     margin-bottom: 10px;
     padding: 5px;
-    color: var(--Celeste)
+    color: var(--Celeste);
+  
 }
 
 
-footer article i:hover{
+.footer-section article i:hover{
     color:chartreuse;
 }
  
@@ -284,8 +305,10 @@ img {
 
 
 .copyright{
-    margin:10px;
+    margin: 10px;
     text-align: center;
+    width: 100%;
+    background-color: #0022AA;
 }
 
 
@@ -301,6 +324,14 @@ img {
     header nav{
     display: flex;
     justify-content: space-between;   
+    }
+
+    header ul li a{
+        font-size: 1rem;
+    }
+
+    header div.top-header p{
+        font-size: 1rem;
     }
 
     ul{
@@ -324,10 +355,7 @@ img {
 
 
     /* main */
-    main section article .description{
-        /* display: block; */
-    }
-    
+ 
     .products article{
         width:43%;
     }
@@ -339,8 +367,14 @@ img {
 
 
     /* footer */
-    footer{
+    .footer-section{
         flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-section article{
+        width: 30%;
+
     }
 
 
@@ -351,8 +385,14 @@ img {
 @media (min-width: 769px){
     /* header */
 
+    header ul li a{
+        font-size: 1.2rem;
+    }
 
-
+    
+    header div.top-header p{
+        font-size: 1.1em;
+    }
 
     /* main */
     .products article{

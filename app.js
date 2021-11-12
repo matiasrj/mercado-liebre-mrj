@@ -3,10 +3,6 @@ const app = express();
 app.use(express.static('public'));
 
 
-app.listen(process.env.PORT||3000, ()=>{
-    console.log('Servidor funcionando en 3000');
-});
-
 app.get('/', (req,res)=>{
     res.sendFile(__dirname + '/views/home.html');
 });
@@ -18,4 +14,8 @@ app.get('/register', (req,res)=>{
 
 app.get('/login', (req,res)=>{
     res.sendFile(__dirname + '/views/login.html');
+});
+
+app.listen(process.env.PORT||3000, ()=>{
+    console.log('Servidor funcionando en 3000');
 });
